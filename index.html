@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mealz</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="header-container">
+      <header>
+        <img class="header-image" src="images/Logo1.png" alt="Mealz" />
+      </header>
+    </div>
+    <main>
+      <div class="background-image">
+        <img src="images/background.png" alt="Your favorite Mealz delivered" />
+      </div>
+      <div class="background-pic1">
+        <img
+          class="background-pic-burger"
+          src="images/Vector2.png"
+          alt="burger"
+        />
+      </div>
+      <div class="img-phone"><img src="images/Phone.png" alt="Phone" /></div>
+      <div class="container-download">
+        <h2 class="title-download">Download the App</h2>
+        <ul class="items-services">
+          <li class="checkmark">Order now or schedule a delivery time.</li>
+          <li class="checkmark">Track your order.</li>
+          <li class="checkmark">Exclusive offers.</li>
+          <li class="checkmark">Online payment.</li>
+          <li class="checkmark">Cash on delivery.</li>
+        </ul>
+        <a
+          class="button-google"
+          href="https://play.google.com/store/games?hl=en&gl=US"
+        >
+          <img src="images/GooglePlay.png" alt="Get it on GooglePlay"
+        /></a>
+        <a class="button-appstore" href="https://www.apple.com/app-store/">
+          <img src="images/AppStore.png" alt="Download on the AppStore" />
+        </a>
+      </div>
+      <div class="container-cards">
+        <h2 class="title-join">Join Us</h2>
+        <a class="button-partners" href="/">
+          <img src="images/partners.png" alt="Partners" />
+        </a>
+        <a class="button-drivers" href="/">
+          <img src="images/drivers.png" alt="Drivers" />
+        </a>
+        <a class="button-jobs" href="/">
+          <img src="images/jobs.png" alt="Jobs" />
+        </a>
+      </div>
+      <img class="background-img-pizza" src="images/Vector3.png" alt="pizza" />
+      <h2 class="title-faq">FAQ</h2>
+      <button class="accordion">What is Mealz?</button>
+      <div class="panel">
+        <p>This is the best food delivery service in Florida.</p>
+      </div>
+      <button class="accordion">What are the accepted payment methods?</button>
+      <div class="panel">
+        <p>
+          For payment, you can use bank cards, Google Pay, Apple Pay,<br />
+          as well as cash upon receipt.
+        </p>
+      </div>
+      <button class="accordion">What are Mealz working hours?</button>
+      <div class="panel">
+        <p>We work around the clock.</p>
+      </div>
+      <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+          });
+        }
+      </script>
+      <p class="text-mail">
+        Got another question? We're here to help!<br />
+        Email us at
+        <a href="example@mealz.com">example@mealz.com</a>
+      </p>
+    </main>
+    <footer>
+      <div class="container-footer">
+        <div class="menu-mealz">
+          <h3 class="title-footer">Mealz</h3>
+          <ul class="items-footer">
+            <li><a class="item-footer" href="/">About Us</a></li>
+            <li><a class="item-footer" href="/">Jobs</a></li>
+            <li><a class="item-footer" href="/">Become a partner</a></li>
+            <li><a class="item-footer" href="/">Join as a driver</a></li>
+            <li><a class="item-footer" href="/">Releases</a></li>
+          </ul>
+        </div>
+        <div class="menu-support">
+          <h3 class="title-footer">Support</h3>
+          <ul class="items-footer">
+            <li><a class="item-footer" href="/">Contact Us</a></li>
+            <li><a class="item-footer" href="/">Help center</a></li>
+            <li><a class="item-footer" href="/">Terms of service</a></li>
+            <li><a class="item-footer" href="/">Legal</a></li>
+            <li><a class="item-footer" href="/">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="menu-follow">
+          <h3 class="title-footer">Follow Us</h3>
+          <ul class="items-footer">
+            <li>
+              <a class="item-footer" href="https://www.facebook.com/"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a class="item-footer" href="https://twitter.com/?lang=en"
+                >Twitter</a
+              >
+            </li>
+            <li>
+              <a class="item-footer" href="https://www.instagram.com/"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a class="item-footer" href="https://www.linkedin.com/feed/"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a class="item-footer" href="https://www.whatsapp.com/"
+                >WhatsApp</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="box-download">
+          <h3 class="subject-download">Download App</h3>
+          <a
+            class="btn-google"
+            href="https://play.google.com/store/games?hl=en&gl=US"
+          >
+            <img src="images/GooglePlay.png" alt="GooglePlay" />
+          </a>
+          <a class="btn-apple" href="https://www.apple.com/app-store/">
+            <img src="images/AppStore.png" alt="Download on the AppStore" />
+          </a>
+        </div>
+      </div>
+      <img class="img-footer" src="images/Logo2.png" alt="Mealz" />
+      <p class="text-footer">©2022 Mealz | All rights reserved</p>
+    </footer>
+  </body>
+</html>
